@@ -1,0 +1,196 @@
+$width: 100vw;
+$icon-size: 45px;
+$main-color: #F6CF00;
+
+@mixin custom-btn($back-color, $font-color) {
+    background: $back-color;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    color: $font-color;
+    width: inherit;
+    height: 50px;
+    display: inline-block;
+}
+
+.btn-yellow {
+    @include custom-btn($main-color, white);
+    &:hover {
+        color: $main-color;
+        border: 2px solid $main-color;
+    }
+}
+
+.btn-yellow-outline {
+    @include custom-btn(white, $main-color);
+    border: 2px solid $main-color;
+    &:hover {
+        color: #fff;
+        background: $main-color;
+    }
+}
+
+.nav-block {
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    height: 65px;
+    width: $width;
+    position: relative;
+    z-index: 1;
+}
+
+.button-block {
+    width: $width;
+    background: #F6F7F9;
+    height: 220px;
+}
+
+.main-block {
+    box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    width: $width;
+    display: flex;
+    justify-content: center;
+}
+
+.main-data {
+    width: 1320px;
+    padding: 30px 0 30px 395px;
+}
+
+.one-big-initial-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: $icon-size;
+    height: $icon-size;
+    font-size: 26px;
+    font-weight: 700;
+    border-radius: 50%;
+    color: white;
+    margin-right: 1rem;
+}
+
+.main-well-block {
+    background: #1771E6;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-top: 63px;
+    width: auto;
+    height: 171px;
+}
+
+.nav-items {
+    width: 1320px;
+    height: 65px;
+    display: block;
+    margin: auto;
+}
+
+.nav-item {
+    font-size: 14px;
+    font-weight: 500;
+    display: inline-block;
+    margin-right: 3rem;
+    height: inherit;
+    width: fit-content;
+    line-height: 65px;
+    color: #868686;
+    cursor: pointer;
+    &:hover {
+        border-bottom: 3px solid $main-color;
+        color: black;
+    }
+}
+
+.buttons {
+    width: 1320px;
+    height: 220px;
+    display: flex;
+    margin: auto;
+    align-items: flex-start;
+    position: relative;
+    padding-top: 30px;
+}
+
+.icon-box {
+    width: 34px;
+    height: 34px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    &:hover {
+        background-color: #e2e2e2;
+    }
+}
+
+.iconRotate {
+    transform: rotate(-180deg);
+}
+
+.table-pagination {
+    table {
+        width: 1320px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        margin: 35px 0 35px 0;
+    }
+    tr{
+        height: 45px;
+    }
+    th {
+        background: #F6F7F9;
+        font-size: 16px;
+        text-align: center;
+    }
+    td {
+        border-bottom: 1px solid #DDDFE0;
+        text-align: center;
+        font-size: 14px;
+    }
+}
+
+.tr-data:hover {
+    cursor: pointer;
+    background-color: #F6F7F9;
+}
+
+.stat-block {
+    position: relative;
+    z-index: 100;
+    width: 335px;
+    margin-right: 60px;
+}
+
+@mixin custom-cell($weight, $size, $height, $align) {
+    text-align: right;
+    border-bottom: 1px solid #DDDFE0;
+    font-weight: $weight;
+    font-size: $size;
+    height: $height;
+    vertical-align: $align;
+}
+
+.table-welldata {
+    table {
+        width: 100%;
+    }
+    th {
+        @include custom-cell(500, 14px, 45px, bottom);
+        padding-bottom: 6px;
+        &:first-child {
+            text-align: left;
+        }
+    }
+    td {
+        @include custom-cell(400, 16px, 65px, middle);
+        &:first-child {
+            text-align: left;
+        }
+    }
+}
+
+.service-icon {
+    margin-right: 1rem;
+}

@@ -1,0 +1,57 @@
+@mixin custom-card($width) {
+    width: $width;
+    padding: 20px 0 20px 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 500;
+}
+
+@mixin dot-size($size) {
+    width: $size;
+    height: $size;
+}
+
+.stat-card {
+    background: white;
+    width: inherit;
+    height: fit-content;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.stat-card-chart {
+    @include custom-card(270px);
+}
+
+.stat-card-bar {
+    @include custom-card(310px);
+}
+
+.stat-card-data {
+    width: inherit;
+    height: 35px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    display: flex;
+    font-size: 16px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px 0 20px;
+    margin: 15px 0 15px 0;
+}
+
+.stat-card-dot {
+    @include dot-size(15px);
+    display: inline-flex;
+    margin-right: 10px;
+}
+
+.stat-card-dot-text {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
