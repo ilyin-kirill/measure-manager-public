@@ -8,6 +8,8 @@ React 18+ (JavaScript, TypeScript), стили - CSS/Scss, ContextAPI
 
 Связь с сервером - fetchAPI, выполнено в соответствии с RestAPI
 
+Макет - https://www.figma.com/file/qv2JsucDttIFbK4uPfEs9n/Measure-Manager?node-id=0%3A1
+
 На данный момент нет функции демо-запуска (с готовыми наборами данных, без авторизации), только вместе с серверной частью.
 
 ## Инструкция по запуску:
