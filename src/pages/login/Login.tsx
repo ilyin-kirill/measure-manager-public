@@ -229,7 +229,7 @@ function Login() {
                 <Button variant="yellow" type="submit">Создать учетную запись</Button>
             </form>}
             <div className="copywrite-span">
-                <p>&copy; 2022 АО “ИГиРГИ”. Все права защищены.</p>
+                <p>&copy; 2022 АО “Компания”. Все права защищены.</p>
             </div>
             </div>
         </div>
